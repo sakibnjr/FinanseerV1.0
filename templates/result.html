@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      background-color: #eeeeee;
+      color: #222831;
+    }
+    .content {
+      width: 860px;
+      margin: 5% auto;
+      text-align: left;
+      border: 5px solid #00adb5;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px;
+      background-color: #eee;
+      border-radius: 5px;
+      color: #00adb5;
+      text-transform: uppercase;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .txt {
+      color: #00adb5;
+      font-size: 1em;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Result</h1>
+      <p>
+        The predicted stock price for {{ symbol }} on {{ date }} is: {{
+        predicted_price }}
+      </p>
+      <p><span class="txt">Date:</span> {{ date }}</p>
+      <p><span class="txt">Predicted Price:</span> ${{ predicted_price }}</p>
+      {% if error_message %}
+      <p><span class="txt">Error Metrics:</span> {{ error_message }}</p>
+      {% endif %} {% if model_message %}
+      <p><span class="txt">Model Info:</span>{{ model_message }}</p>
+      {% endif %}
+    </div>
+  </body>
+</html>

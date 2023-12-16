@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #eeeeee;
+  color: #222831;
+}
+.content {
+  width: 860px;
+  margin: 5% auto;
+  text-align: center;
+  border: 5px solid #00adb5;
+  padding-bottom: 10px;
+}
+h1 {
+  margin: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  color: #00adb5;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+form input {
+  width: 220px;
+  height: 36px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: none;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 173, 181, 1);
+  color: #222831;
+}
+form {
+  position: relative;
+}
+
+.data-period {
+  display: inline-block;
+  border-right: 2px solid #00adb5;
+  border-radius: 10%;
+}
+
+label[for="start_date"] {
+  position: absolute;
+  z-index: 1;
+  left: 76px;
+  top: 175px;
+  background-color: #00adb5;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.prediction-box {
+  border-left: 2px solid #00adb5;
+  border-radius: 10%;
+  margin: 5px 0px;
+  display: inline-block;
+  padding: 0px 10px;
+  position: relative;
+}
+
+label[for="month"] {
+  position: absolute;
+  z-index: 1;
+  background-color: #00adb5;
+  color: #222831;
+  padding: 2px 8px;
+  border-radius: 10px;
+  left: 210px;
+  bottom: 120px;
+  text-transform: uppercase;
+}
+.tools {
+  text-align: left;
+  width: 300px;
+  margin: 0px auto;
+}
+fieldset {
+  border: 2px solid #00adb5;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+legend.more-tools {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid #00adb5;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+input#show_error.input,
+input#model_info.input,
+input#data_view.input {
+  height: 20px;
+  width: 20px;
+}
+input#symbol {
+  width: 300px;
+}
+input.predict-btn {
+  width: 300px;
+  background-color: #00adb5;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  height: 38px;
+  margin-top: 10px;
+}
+input.predict-btn:hover {
+  background-color: #eee;
+  color: #00adb5;
+}

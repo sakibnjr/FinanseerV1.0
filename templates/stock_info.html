@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Information</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      background-color: #eeeeee;
+      color: #222831;
+    }
+    .content {
+      width: 860px;
+      margin: 5% auto;
+      text-align: left;
+      border: 5px solid #00adb5;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px;
+      background-color: #eee;
+      border-radius: 5px;
+      color: #00adb5;
+      text-transform: uppercase;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Stock Information</h1>
+      {% for table in tables %} {{ table|safe }} {% endfor %}
+    </div>
+  </body>
+</html>
