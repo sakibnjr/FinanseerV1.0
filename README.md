@@ -1,6 +1,6 @@
 Make sure to have python installed on your OS.
 
-Before you prooceed, install necessary libraries by running these commands;
+Before you proceed, install necessary libraries by running these commands;
 
 | pip install Flask |
 | pip install pandas |
